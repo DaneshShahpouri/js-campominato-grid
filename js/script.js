@@ -37,6 +37,9 @@ function createNewSquare(parentElement, text){
 btnPlay.addEventListener('click', ()=>{
     //ripulisci la griglia genitore;
     gridContainerElement.innerHTML="";
+
+    btnPlay.innerText="Replay!"
+
     //Crea una nuova griglia;
     createGrid();
 })
