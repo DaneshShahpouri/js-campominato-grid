@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* COMMONS */
+
+/* btn 
+---------------------------*/
+
+.btn{
+    display: block;
+    padding: 4px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+    
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    background: #6b8de8;
+    color: rgb(239, 237, 237);
+
+    font-size: 1.2em;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+}
+
+.btn:hover{
+    background: #7a9af1;
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.171);
+}
+
+.btn:active{
+    background: #5a74bd;
+    color: rgb(228, 227, 227);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+}
+
+/*--------------------------
+fine btn */
+
+/* titles 
+---------------------------*/
+
+h1{
+    padding: 1em;
+    text-align: center;
+}
+
+/*--------------------------
+fine titles */
+
+
+ /* grid 
+---------------------------*/
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 80vw; height: 80vw;
+    min-width: 300px; min-height: 300px;
+    max-width: 650px; max-height: 650px;
+
+    background: rgb(127, 255, 212);
+    margin:2em  auto;
+}
+
+.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+
+    background: #f5f5f514;
+    cursor: pointer;
+    
+
+    border: 1px solid black;
+}
+
+.selected{
+    background: #0073ff;
+}
+
+/*--------------------------
+fine grid */
