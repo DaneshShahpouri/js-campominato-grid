@@ -1,12 +1,28 @@
 
 const btnPlay = document.getElementById("btn-play");
 const gridContainerElement = document.getElementById("grid-container")
+const difficult = document.getElementById("difficult");
 
 
-function createGrid(){
+/**
+ * Crea una griglia in base al livello della difficoltà impostato (hard, medium,easy)
+ * @param {any} difficultLevel
+ * @returns {any}
+ */
+function createGrid(difficultLevel){
+    let maxlenght;
 
-    for(let i = 1; i <= 100; i++){
-        createNewSquare(gridContainerElement, i)
+    if (difficultLevel == "hard") {
+        maxlenght = 100;
+    }else if( difficultLevel == "medium"){
+        maxlenght = 81;
+    }else{
+        maxlenght=49;
+    }
+
+    
+    for(let i = 1; i <= maxlenght; i++){
+        createNewSquare(gridContainerElement, i, difficult.value )
     }
     
 }
@@ -16,11 +32,12 @@ function createGrid(){
  * @param {elemento genitore, testo dell'elemento creato} parentElement
  * @returns {any}
  */
-function createNewSquare(parentElement, text){
+function createNewSquare(parentElement, text, classInput){
 
     //Crea elemento div con classe "square" e lo aggiunge a un elemento esistente
     let square = document.createElement("div");
-        square.classList.add("square");
+        square.classList="square";
+        square.classList.add(classInput);
         square.innerText = text;
 
         
@@ -41,5 +58,5 @@ btnPlay.addEventListener('click', ()=>{
     btnPlay.innerText="Replay!"
 
     //Crea una nuova griglia;
-    createGrid();
+    createGrid(difficult.value);
 })

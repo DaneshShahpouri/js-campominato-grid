@@ -3,6 +3,18 @@
     margin:0;
     box-sizing: border-box;
 }
+
+#difficult{
+    display: block;
+    margin: auto;
+    padding:2px 10px;
+    font-size: 1em;
+
+    background: rgb(255, 255, 255);
+    color: rgb(72, 144, 120);
+
+    border-radius: 4px;
+}
 /* COMMONS */
 
 /* btn 
@@ -68,14 +80,26 @@ fine titles */
 }
 
 .square{
-    width: calc(100% / 10);
-    height: calc(100% / 10);
-
     background: #f5f5f514;
     cursor: pointer;
     
 
     border: 1px solid black;
+}
+
+.hard{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.medium{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.easy{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
 }
 
 .selected{
