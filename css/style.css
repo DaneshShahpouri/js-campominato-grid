@@ -63,15 +63,23 @@ fine titles */
     min-width: 300px; min-height: 300px;
     max-width: 650px; max-height: 650px;
 
-    background: #62aac7;
+    background: rgb(127, 255, 212);
     margin:2em  auto;
 }
 
-.squere{
+.square{
     width: calc(100% / 10);
     height: calc(100% / 10);
-    background: #9b404040;
+
+    background: #f5f5f514;
+    cursor: pointer;
+    
+
     border: 1px solid black;
+}
+
+.selected{
+    background: #0073ff;
 }
 
 /*--------------------------
