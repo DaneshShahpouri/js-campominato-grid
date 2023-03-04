@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trinx</title>
+</head>
+<body>
+
+    <div class="screen">
+        <!-- titolo -->
+        <h1>TrinX</h1>
+
+        <div id="start-screen">
+
+            <p><strong>Trincee</strong> è una versione rielaborata di campominato.<br>
+            Sei un soldato in trincea nella Prima Guerra Mondiale e devi attraversare la terra di nessuno e conquistare la trincea nemica mentre ti sparano addosso.<br>
+            Muoviti con le frecce direzionali e raggiungi l'altra parte del campo. <br>
+            Stai attento al colore delle caselle, se sono verdi non ci sono mine vicine ma se diventano gialle devi prestare attenzione!
+            Buona Fortuna.</p>
+            <button id="btn-start">Start Game</button>
+
+        </div>
+
+        <div id="grid-screen" class="grid-wrapper hidden">
+        
+            <div class="soldier-wrapper">
+                <div class="soldier"><div id="sold0" class="sold"></div></div>
+                <div class="soldier"><div id="sold1" class="sold"></div></div>
+                <div class="soldier"><div id="sold2" class="sold"></div></div>
+                <div class="soldier"><div id="sold3" class="sold"></div></div>
+                <div class="soldier"><div id="sold4" class="sold"></div></div>
+                <div class="soldier"><div id="sold5" class="sold"></div></div>
+                <div class="soldier"><div id="sold6" class="sold"></div></div>
+                <div class="soldier"><div id="sold7" class="sold"></div></div>
+                <div class="soldier"><div id="sold8" class="sold"></div></div>
+                <div class="soldier"><div id="sold9" class="sold"></div></div>
+            </div>
+    
+            <!-- Grid -->
+            <div class="grid" id="grid-parent">
+    
+            </div>
+    
+            <div id="lose" class="lose hidden">
+                <h2>HAI PERSO!</h2>
+                <button class="reset"><i class="fa-solid fa-rotate-right"></i> Restart</button>
+            </div>
+    
+            <div id="win" class="win hidden">
+                <h2>HAI VINTO!</h2>
+                <button class="reset"><i class="fa-solid fa-rotate-right"></i> Restart</button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
