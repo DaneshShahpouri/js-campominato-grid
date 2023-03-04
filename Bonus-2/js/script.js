@@ -107,7 +107,8 @@ function startGame(){
                 arrGrid[newPosition+ 10].classList.add("kill"); 
                 arrGrid[newPosition].classList.remove("shot"); 
                 for(let q = 0; q < arrBombe.length; q++){
-                    arrGrid[arrBombe[q]].style.background="url(/img/mina.png)";
+                    arrGrid[arrBombe[q]].style.backgroundImage="url('./img/mina.png')";
+                    
                 };
                 gameover=true;
                 grid.classList.add('opacity');
@@ -359,7 +360,7 @@ function startGame(){
                 grid.classList.add('opacity');
                 lose.classList.remove("hidden");
                 for(let q = 0; q < arrBombe.length; q++){
-                    arrGrid[arrBombe[q]].style.background="url(/img/mina.png)";
+                    arrGrid[arrBombe[q]].style.backgroundImage="url('./img/mina.png')";
                     
                 }
                 gameover=true;   
@@ -371,7 +372,7 @@ function startGame(){
     function showBombs(){
         for(let i = 0; i < arrBombe.length; i++){
            
-            arrGrid[arrBombe[i]].style.background="red";
+            arrGrid[arrBombe[i]].style.backgroundImage="url('./img/mina.png')";
         }
     }
 
