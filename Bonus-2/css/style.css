@@ -215,17 +215,18 @@ h1{
     border: 2px solid rgba(197, 10, 10, 0);
     position: relative;
     color: rgba(255, 255, 255, 0);
-    border-radius: 0px;
+    border-radius: 50%;
 }
 
 .discover-cell{
-    background: #42ba5421;
+    background: #23c53c1d;
     border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
 }
 
 .discover-cell.nearCell{
-    background: #ffff0032;
-    border-radius: 0px;
+    background: #ffff0068;
+    border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0);
 }
 
