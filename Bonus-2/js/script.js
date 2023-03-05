@@ -67,7 +67,7 @@ function startGame(){
        
        
        
-    }, 800)
+    }, 600)
     
     
     
